@@ -8,6 +8,9 @@ import numpy as np
 # Create the Dash app
 app = dash.Dash(__name__, title="Philippines Candidate Comparison Dashboard")
 
+# Add this line here
+server = app.server  # Expose the WSGI server
+
 # Load the data
 df = pd.read_csv('data/Pulse_Feb_Regional.csv')
 
